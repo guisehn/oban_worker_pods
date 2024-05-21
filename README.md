@@ -22,3 +22,5 @@ The job just prints a `"Hello #{name}"`. You'll notice it'll only run on the wor
 On `runtime.exs`, the `queues` config is set to `[]` unless `WORKER_NODE` is `true`.
 
 Based on sorentwo's suggestion: https://elixirforum.com/t/run-oban-web-without-executing-jobs/53449/2
+
+⚠️ it's important to do this on `runtime.exs`, as `config.exs` is compiled
